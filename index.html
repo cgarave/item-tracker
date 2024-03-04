@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Item Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72f174461b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <p>Item Tracker v0</p>
+    </nav>
+    <div class="items-container">
+        <div class="col-container">
+            <p id="col-1">Items</p>
+            <div class="search-container" id="col-2">
+                <i class="fa-solid fa-magnifying-glass fa-sm" style="display: flex; align-items: center; width: 10px; margin: 10px; color: #858585;"></i>
+                <input type="search" placeholder="Search" id="searchBtn">
+            </div>
+            <button id="addBtn" class="buttons">Add Item</button>
+            <button id="clearBtn" class="buttons">Clear</button>
+        </div>
+        <table>
+            <thead>
+                <th>NAME</th>
+                <th>WHOLESALE PRICE</th>
+                <th>QTY</th>
+                <th>RETAIL PRICE</th> 
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
